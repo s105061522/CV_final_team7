@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{0AE529EA-91B5-3ED5-A1C3-422091DAA5FF}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>face_landmark_detection_to_file</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Ken\Desktop\dlib-master\examples\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">face_landmark_detection_to_file.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">face_landmark_detection_to_file</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Ken\Desktop\dlib-master\examples\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">face_landmark_detection_to_file.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">face_landmark_detection_to_file</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Ken\Desktop\dlib-master\examples\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">face_landmark_detection_to_file.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">face_landmark_detection_to_file</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Ken\Desktop\dlib-master\examples\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">face_landmark_detection_to_file.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">face_landmark_detection_to_file</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opencv\build\include\opencv2;C:\opencv\build\include\opencv;C:\opencv\build\include;C:\Users\Ken\Desktop\dlib-master\dlib\..;C:\opencv\build\x86\vc12\lib\include;C:\opencv\build\x86\vc12\lib\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_PNG_SUPPORT;DLIB_JPEG_SUPPORT;_DEBUG;ENABLE_ASSERTS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_PNG_SUPPORT;DLIB_JPEG_SUPPORT;_DEBUG;ENABLE_ASSERTS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Ken\Desktop\dlib-master\dlib\..;C:\opencv\build\x86\vc12\lib\include;C:\opencv\build\x86\vc12\lib\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Ken\Desktop\dlib-master\dlib\..;C:\opencv\build\x86\vc12\lib\include;C:\opencv\build\x86\vc12\lib\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dlib_build\Debug\dlib.lib;C:\opencv\build\x86\vc12\lib\opencv_videostab2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_ts2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_superres2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_stitching2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_contrib2413d.lib;winmm.lib;imm32.lib;C:\opencv\build\x86\vc12\lib\opencv_nonfree2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_ocl2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_gpu2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_photo2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_objdetect2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_legacy2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_video2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_ml2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_calib3d2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_features2d2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_highgui2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_imgproc2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;C:\opencv\build\x86\vc12\lib\opencv_flann2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_core2413d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\opencv\build\x86\vc12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Ken/Desktop/dlib-master/examples/build/Debug/face_landmark_detection_to_file.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Ken/Desktop/dlib-master/examples/build/Debug/face_landmark_detection_to_file.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opencv\build\include\opencv2;C:\opencv\build\include\opencv;C:\opencv\build\include;C:\Users\Ken\Desktop\dlib-master\dlib\..;C:\opencv\build\x86\vc12\lib\include;C:\opencv\build\x86\vc12\lib\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_PNG_SUPPORT;DLIB_JPEG_SUPPORT;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_PNG_SUPPORT;DLIB_JPEG_SUPPORT;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Ken\Desktop\dlib-master\dlib\..;C:\opencv\build\x86\vc12\lib\include;C:\opencv\build\x86\vc12\lib\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Ken\Desktop\dlib-master\dlib\..;C:\opencv\build\x86\vc12\lib\include;C:\opencv\build\x86\vc12\lib\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dlib_build\Release\dlib.lib;C:\opencv\build\x86\vc12\lib\opencv_videostab2413.lib;C:\opencv\build\x86\vc12\lib\opencv_ts2413.lib;C:\opencv\build\x86\vc12\lib\opencv_superres2413.lib;C:\opencv\build\x86\vc12\lib\opencv_stitching2413.lib;C:\opencv\build\x86\vc12\lib\opencv_contrib2413.lib;ws2_32.lib;winmm.lib;comctl32.lib;gdi32.lib;imm32.lib;C:\opencv\build\x86\vc12\lib\opencv_nonfree2413.lib;C:\opencv\build\x86\vc12\lib\opencv_ocl2413.lib;C:\opencv\build\x86\vc12\lib\opencv_gpu2413.lib;C:\opencv\build\x86\vc12\lib\opencv_photo2413.lib;C:\opencv\build\x86\vc12\lib\opencv_objdetect2413.lib;C:\opencv\build\x86\vc12\lib\opencv_legacy2413.lib;C:\opencv\build\x86\vc12\lib\opencv_video2413.lib;C:\opencv\build\x86\vc12\lib\opencv_ml2413.lib;C:\opencv\build\x86\vc12\lib\opencv_calib3d2413.lib;C:\opencv\build\x86\vc12\lib\opencv_features2d2413.lib;C:\opencv\build\x86\vc12\lib\opencv_highgui2413.lib;C:\opencv\build\x86\vc12\lib\opencv_imgproc2413.lib;C:\opencv\build\x86\vc12\lib\opencv_flann2413.lib;C:\opencv\build\x86\vc12\lib\opencv_core2413.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\opencv\build\x86\vc12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Ken/Desktop/dlib-master/examples/build/Release/face_landmark_detection_to_file.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Ken/Desktop/dlib-master/examples/build/Release/face_landmark_detection_to_file.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opencv\build\include\opencv2;C:\opencv\build\include\opencv;C:\opencv\build\include;C:\Users\Ken\Desktop\dlib-master\dlib\..;C:\opencv\build\x86\vc12\lib\include;C:\opencv\build\x86\vc12\lib\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_PNG_SUPPORT;DLIB_JPEG_SUPPORT;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_PNG_SUPPORT;DLIB_JPEG_SUPPORT;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Ken\Desktop\dlib-master\dlib\..;C:\opencv\build\x86\vc12\lib\include;C:\opencv\build\x86\vc12\lib\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Ken\Desktop\dlib-master\dlib\..;C:\opencv\build\x86\vc12\lib\include;C:\opencv\build\x86\vc12\lib\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dlib_build\MinSizeRel\dlib.lib;C:\opencv\build\x86\vc12\lib\opencv_videostab2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_ts2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_superres2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_stitching2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_contrib2413d.lib;winmm.lib;imm32.lib;C:\opencv\build\x86\vc12\lib\opencv_nonfree2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_ocl2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_gpu2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_photo2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_objdetect2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_legacy2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_video2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_ml2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_calib3d2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_features2d2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_highgui2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_imgproc2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;C:\opencv\build\x86\vc12\lib\opencv_flann2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_core2413d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\opencv\build\x86\vc12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Ken/Desktop/dlib-master/examples/build/MinSizeRel/face_landmark_detection_to_file.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Ken/Desktop/dlib-master/examples/build/MinSizeRel/face_landmark_detection_to_file.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opencv\build\include\opencv2;C:\opencv\build\include\opencv;C:\opencv\build\include;C:\Users\Ken\Desktop\dlib-master\dlib\..;C:\opencv\build\x86\vc12\lib\include;C:\opencv\build\x86\vc12\lib\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_PNG_SUPPORT;DLIB_JPEG_SUPPORT;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DLIB_PNG_SUPPORT;DLIB_JPEG_SUPPORT;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Ken\Desktop\dlib-master\dlib\..;C:\opencv\build\x86\vc12\lib\include;C:\opencv\build\x86\vc12\lib\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Ken\Desktop\dlib-master\dlib\..;C:\opencv\build\x86\vc12\lib\include;C:\opencv\build\x86\vc12\lib\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dlib_build\RelWithDebInfo\dlib.lib;C:\opencv\build\x86\vc12\lib\opencv_videostab2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_ts2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_superres2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_stitching2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_contrib2413d.lib;winmm.lib;imm32.lib;C:\opencv\build\x86\vc12\lib\opencv_nonfree2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_ocl2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_gpu2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_photo2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_objdetect2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_legacy2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_video2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_ml2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_calib3d2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_features2d2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_highgui2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_imgproc2413d.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;vfw32.lib;C:\opencv\build\x86\vc12\lib\opencv_flann2413d.lib;C:\opencv\build\x86\vc12\lib\opencv_core2413d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\opencv\build\x86\vc12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Ken/Desktop/dlib-master/examples/build/RelWithDebInfo/face_landmark_detection_to_file.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Ken/Desktop/dlib-master/examples/build/RelWithDebInfo/face_landmark_detection_to_file.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Ken\Desktop\dlib-master\examples\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Ken/Desktop/dlib-master/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\bin\cmake.exe -HC:/Users/Ken/Desktop/dlib-master/examples -BC:/Users/Ken/Desktop/dlib-master/examples/build --check-stamp-file C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Ken/Desktop/dlib-master/examples/CMakeLists.txt;C:\Users\Ken\Desktop\dlib-master\examples\CMakeLists.txt;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeSystem.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeCCompiler.cmake;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeCXXCompiler.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Ken\Desktop\dlib-master\dlib\cmake;C:\Users\Ken\Desktop\dlib-master\dlib\add_global_compiler_switch.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Users\Ken\Desktop\dlib-master\dlib\release_build_by_default;C:\opencv\build\x86\vc12\lib\OpenCVConfig.cmake;C:\opencv\build\x86\vc12\lib\OpenCVModules.cmake;C:\opencv\build\x86\vc12\lib\OpenCVModules-debug.cmake;C:\opencv\build\x86\vc12\lib\OpenCVModules-release.cmake;C:\Users\Ken\Desktop\dlib-master\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Ken/Desktop/dlib-master/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\bin\cmake.exe -HC:/Users/Ken/Desktop/dlib-master/examples -BC:/Users/Ken/Desktop/dlib-master/examples/build --check-stamp-file C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Ken/Desktop/dlib-master/examples/CMakeLists.txt;C:\Users\Ken\Desktop\dlib-master\examples\CMakeLists.txt;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeSystem.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeCCompiler.cmake;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeCXXCompiler.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Ken\Desktop\dlib-master\dlib\cmake;C:\Users\Ken\Desktop\dlib-master\dlib\add_global_compiler_switch.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Users\Ken\Desktop\dlib-master\dlib\release_build_by_default;C:\opencv\build\x86\vc12\lib\OpenCVConfig.cmake;C:\opencv\build\x86\vc12\lib\OpenCVModules.cmake;C:\opencv\build\x86\vc12\lib\OpenCVModules-debug.cmake;C:\opencv\build\x86\vc12\lib\OpenCVModules-release.cmake;C:\Users\Ken\Desktop\dlib-master\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Ken/Desktop/dlib-master/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\bin\cmake.exe -HC:/Users/Ken/Desktop/dlib-master/examples -BC:/Users/Ken/Desktop/dlib-master/examples/build --check-stamp-file C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Ken/Desktop/dlib-master/examples/CMakeLists.txt;C:\Users\Ken\Desktop\dlib-master\examples\CMakeLists.txt;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeSystem.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeCCompiler.cmake;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeCXXCompiler.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Ken\Desktop\dlib-master\dlib\cmake;C:\Users\Ken\Desktop\dlib-master\dlib\add_global_compiler_switch.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Users\Ken\Desktop\dlib-master\dlib\release_build_by_default;C:\opencv\build\x86\vc12\lib\OpenCVConfig.cmake;C:\opencv\build\x86\vc12\lib\OpenCVModules.cmake;C:\opencv\build\x86\vc12\lib\OpenCVModules-debug.cmake;C:\opencv\build\x86\vc12\lib\OpenCVModules-release.cmake;C:\Users\Ken\Desktop\dlib-master\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Ken/Desktop/dlib-master/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\bin\cmake.exe -HC:/Users/Ken/Desktop/dlib-master/examples -BC:/Users/Ken/Desktop/dlib-master/examples/build --check-stamp-file C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Ken/Desktop/dlib-master/examples/CMakeLists.txt;C:\Users\Ken\Desktop\dlib-master\examples\CMakeLists.txt;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeSystem.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeCCompiler.cmake;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeCXXCompiler.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\3.7.1\CMakeRCCompiler.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Ken\Desktop\dlib-master\dlib\cmake;C:\Users\Ken\Desktop\dlib-master\dlib\add_global_compiler_switch.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Users\Ken\Desktop\cmake-3.7.1-win64-x64\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;C:\Users\Ken\Desktop\dlib-master\dlib\release_build_by_default;C:\opencv\build\x86\vc12\lib\OpenCVConfig.cmake;C:\opencv\build\x86\vc12\lib\OpenCVModules.cmake;C:\opencv\build\x86\vc12\lib\OpenCVModules-debug.cmake;C:\opencv\build\x86\vc12\lib\OpenCVModules-release.cmake;C:\Users\Ken\Desktop\dlib-master\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Ken\Desktop\dlib-master\examples\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Ken\Desktop\dlib-master\examples\face_landmark_detection_to_file.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Ken/Desktop/dlib-master/examples/build/ZERO_CHECK.vcxproj">
+      <Project>5B43B3EE-B1E2-31C5-88AD-FBC932ACF2E3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Ken/Desktop/dlib-master/examples/build/dlib_build/dlib.vcxproj">
+      <Project>3B9A636E-14AA-3A81-BE7E-0B5A72B27DB5</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
