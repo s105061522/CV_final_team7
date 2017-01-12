@@ -1,11 +1,17 @@
 Read_me for face_landmark_detection_to_file.vcxproj and face_landmark_detection_to_file.exe
 
 1.Environment settings for face_landmark_detection_to_file.vcxproj:
+  
   Developped with Visual Studio 2015. 
+  
   You need to download OpenCV (2.4.13)(Note: cannot use 3.0 or above), DLib (19.2) libraries and cmake(3.7.1)
+  
   You have to use cmake-gui.exe for face_landmark_detection_to_file.cpp in DLib with proper OpenCV path first to get its vcxproj.
+ 
   After building vcxproj., you have to set proper environment variable for OpenCV.
+  
   That is,add .dll paths to windows $PATH and change include + .lib paths in Visual Studio Settings.
+  
   You can watch https://www.youtube.com/watch?v=-cWdLm7WZm8 on youtube to know how to do it.
 
 2.Input argument for face_landmark_detection_to_file.exe(Under linux system or CMD):
