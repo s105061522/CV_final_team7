@@ -1,2 +1,1 @@
-
-The file here is for part 2 input.
+The files here are for part 2 input.
