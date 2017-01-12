@@ -1,5 +1,7 @@
 Read_me for face_landmark_detection_to_file.vcxproj and face_landmark_detection_to_file.exe
 
+  0.face_landmark_detection_to_file.exe is in exe file.
+
   1.Environment settings for face_landmark_detection_to_file.vcxproj:
            
       Developped with Visual Studio 2015. (https://www.visualstudio.com/downloads/)
